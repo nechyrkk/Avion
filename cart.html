@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Avion</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header cart-header">
+        <div class="header-container cart-header-container">
+            <div class="search-wrapper">
+                <button class="search-icon" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+            
+            <div class="logo">
+                <a href="index.html">Avion</a>
+            </div>
+            
+            <div class="header-icons">
+                <button class="icon-btn" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L19 6H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="8" cy="18" r="1" fill="currentColor"/>
+                        <circle cx="17" cy="18" r="1" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button class="icon-btn" aria-label="User Account">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 17v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Plant pots</a></li>
+                <li><a href="#" class="nav-link">Ceramics</a></li>
+                <li><a href="#" class="nav-link">Tables</a></li>
+                <li><a href="#" class="nav-link">Chairs</a></li>
+                <li><a href="#" class="nav-link">Crockery</a></li>
+                <li><a href="#" class="nav-link">Tableware</a></li>
+                <li><a href="#" class="nav-link">Cutlery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="cart-container">
+            <h1 class="cart-title">Your shopping cart</h1>
+
+            <!-- Cart Table -->
+            <div class="cart-table">
+                <!-- Table Header -->
+                <div class="cart-table-header">
+                    <div class="cart-header-product">Product</div>
+                    <div class="cart-header-quantity">Quantity</div>
+                    <div class="cart-header-total">Total</div>
+                </div>
+
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <div class="cart-item-image cart-item-image-1"></div>
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-name">Graystone vase</h3>
+                                <p class="cart-item-description">A timeless ceramic vase with a tri color grey glaze.</p>
+                                <p class="cart-item-price">£85</p>
+                            </div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <span class="quantity-display">1</span>
+                        </div>
+                        <div class="cart-item-total">
+                            <span class="item-total-price">£85</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <div class="cart-item-image cart-item-image-2"></div>
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-name">Basic white vase</h3>
+                                <p class="cart-item-description">Beautiful and simple this is one for the classics</p>
+                                <p class="cart-item-price">£85</p>
+                            </div>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <span class="quantity-display">1</span>
+                        </div>
+                        <div class="cart-item-total">
+                            <span class="item-total-price">£125</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <div class="cart-summary-content">
+                    <div class="cart-subtotal">
+                        <span class="subtotal-label">Subtotal</span>
+                        <span class="subtotal-amount">£210</span>
+                    </div>
+                    <p class="cart-note">Taxes and shipping are calculated at checkout</p>
+                    <button class="btn btn-checkout">Go to checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">New arrivals</a></li>
+                        <li><a href="#">Best sellers</a></li>
+                        <li><a href="#">Recently viewed</a></li>
+                        <li><a href="#">Popular this week</a></li>
+                        <li><a href="#">All products</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Crockery</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Homeware</a></li>
+                        <li><a href="#">Plant pots</a></li>
+                        <li><a href="#">Chairs</a></li>
+                        <li><a href="#">Crockery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Our company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Vacancies</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Returns policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Join our mailing list</h4>
+                    <form class="footer-form">
+                        <input type="email" placeholder="your@email.com" class="footer-input">
+                        <button type="submit" class="btn-submit">Sign up</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">Copyright 2022 Avion LTD</p>
+                <div class="social-icons">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" fill="currentColor"/>
+                            <circle cx="4" cy="4" r="2" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="15.5" cy="4.5" r="1" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Skype">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 11s1 2 4 2 4-1 4-3-1-2.5-3-3-3-1-3-2 1-2 3-2 3 1 3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 19 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Pinterest">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 10c0-3 2-5 4-5s4 1 4 4-2 4-4 4c-1 0-1-.5-1-1l1-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

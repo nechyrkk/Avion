@@ -1,0 +1,476 @@
+.white{
+  background: white;
+}
+.about-header .about-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 5vw;
+}
+.about-header .logo a {
+  color: #2A254B;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-family: "Clash Display", serif;
+  transition: color 0.3s ease;
+}
+.about-header .logo a:hover {
+  color: #4E4D93;
+}
+.about-header .header-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+}
+.about-header .header-nav-link {
+  color: #505977;
+  text-decoration: none;
+  font-size: 0.9vw;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.about-header .header-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5vh;
+  left: 0;
+  width: 0;
+  height: 0.15vh;
+  background: #2A254B;
+  transition: width 0.3s ease;
+}
+.about-header .header-nav-link:hover {
+  color: #2A254B;
+}
+.about-header .header-nav-link:hover::after {
+  width: 100%;
+}
+
+.secondary-nav {
+  border-top: 0.1vw solid #EBE8F4;
+  background: rgb(249, 249, 249);
+}
+
+.secondary-nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 3vw;
+  padding: 1.5vh 5vw;
+}
+
+.secondary-nav-link {
+  color: #505977;
+  text-decoration: none;
+  font-size: 0.9vw;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.secondary-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5vh;
+  left: 0;
+  width: 0;
+  height: 0.15vh;
+  background: #2A254B;
+  transition: width 0.3s ease;
+}
+.secondary-nav-link:hover {
+  color: #2A254B;
+}
+.secondary-nav-link:hover::after {
+  width: 100%;
+}
+
+.about-hero {
+  background: rgb(255, 255, 255);
+  padding: 8vh 5vw;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 60vw;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(3vh);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.about-hero-title {
+  font-size: 2.5vw;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #2A254B;
+  font-family: "Clash Display", serif;
+}
+
+.story-section {
+  background: rgb(255, 255, 255);
+  padding: 0;
+}
+
+.story-section-1 {
+  background: rgb(255, 255, 255);
+}
+
+.story-section-2 {
+  background: rgb(249, 249, 249);
+}
+
+.story-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 60vh;
+}
+
+.story-container-reverse .story-content {
+  order: 2;
+}
+.story-container-reverse .story-image {
+  order: 1;
+}
+
+.story-content {
+  padding: 8vh 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+  opacity: 0;
+  transform: translateX(-3vw);
+  transition: all 0.8s ease;
+}
+.story-content.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.story-title {
+  font-size: 1.8vw;
+  font-weight: 400;
+  color: #2A254B;
+  font-family: "Clash Display", serif;
+  line-height: 1.3;
+  margin-bottom: 2vh;
+}
+
+.story-text {
+  font-size: 1vw;
+  color: #505977;
+  line-height: 1.8;
+  margin-bottom: 1vh;
+}
+
+.story-image {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.story-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(42, 37, 75, 0.03) 0%, transparent 100%);
+}
+
+.story-image-1 {
+  background: url("../img/about/1.jpg") center center/cover no-repeat;
+}
+
+.story-image-2 {
+  background: url("../img/about/2.jpg") center center/cover no-repeat;
+}
+
+.newsletter-about {
+  background: url("../img/about/3.jpg") center center/cover no-repeat;
+  padding: 8vh 5vw;
+}
+
+.newsletter-content-wide {
+  background: transparent;
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-title {
+    color: white;
+    font-size: 3.5vw;
+    font-weight: 400;
+    margin-bottom: 4vh;
+    font-family: 'Clash Display', serif;
+    opacity: 0;
+    transform: translateY(2vh);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.newsletter-description {
+    color: white;
+    font-size: 1.6vw;
+    margin-bottom: 5vh;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(2vh);
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.newsletter-form-about {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 3vh;
+    opacity: 0;
+    transform: translateY(2vh);
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    margin-top: 3vw;
+}
+
+.newsletter-input-narrow {
+    width: 30vw;
+    height: 4vw;
+    padding: 1.5vh 2vw;
+    border: none;
+    background: rgba(255, 255, 255, 0.80);
+    font-size: 1vw;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+        color: rgba(42, 37, 75, 0.5);
+    }
+
+    &:focus {
+        background: rgba(255, 255, 255, 0.95);
+    }
+}
+
+.newsletter-checkboxes {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    flex-wrap: wrap;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(2vh);
+    
+    &:nth-child(1) {
+        animation: fadeInUp 0.8s ease 0.6s forwards;
+    }
+    
+    &:nth-child(2) {
+        animation: fadeInUp 0.8s ease 0.8s forwards;
+    }
+    
+    &:nth-child(3) {
+        animation: fadeInUp 0.8s ease 1s forwards;
+    }
+}
+
+.newsletter-checkbox {
+    width: 1.2vw;
+    height: 1.2vw;
+    cursor: pointer;
+    accent-color: white;
+    
+    &:checked {
+        accent-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.checkbox-label {
+    user-select: none;
+}
+
+.footer-grid-about {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .about-hero-title {
+    font-size: 3.5vw;
+  }
+  .story-title {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .about-header .about-header-container {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .about-header .logo a {
+    font-size: 4vw;
+  }
+  .about-header .header-nav-list {
+    gap: 5vw;
+  }
+  .about-header .header-nav-link {
+    font-size: 2.2vw;
+  }
+  .about-header .header-icons {
+    margin-top: 2vh;
+  }
+  .secondary-nav-list {
+    flex-wrap: wrap;
+    gap: 3vw 2vw;
+    justify-content: flex-start;
+    padding: 2vh 4vw;
+  }
+  .secondary-nav-link {
+    font-size: 2vw;
+  }
+  .about-hero {
+    padding: 6vh 4vw;
+  }
+  .about-hero-content {
+    max-width: 90vw;
+  }
+  .about-hero-title {
+    font-size: 5vw;
+  }
+  .story-container {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .story-container-reverse .story-content,
+  .story-container-reverse .story-image {
+    order: initial;
+  }
+  .story-content {
+    padding: 6vh 5vw;
+  }
+  .story-title {
+    font-size: 4.5vw;
+  }
+  .story-text {
+    font-size: 2.5vw;
+  }
+  .story-image {
+    min-height: 40vh;
+  }
+  .newsletter-title {
+      font-size: 5vw;
+  }
+
+  .newsletter-description {
+      font-size: 2.8vw;
+  }
+
+  .newsletter-input-narrow {
+      width: 50vw;
+      font-size: 2.5vw;
+  }
+
+  .newsletter-checkboxes {
+      flex-direction: column;
+      align-items: center;
+      gap: 2vh;
+  }
+
+  .checkbox-item {
+      font-size: 2.5vw;
+      gap: 2vw;
+  }
+
+  .newsletter-checkbox {
+      width: 4vw;
+      height: 4vw;
+  }
+  .footer-grid-about {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vh 4vw;
+  }
+}
+@media (max-width: 480px) {
+  .about-header .logo a {
+    font-size: 5vw;
+  }
+  .about-header .header-nav-list {
+    gap: 6vw;
+  }
+  .about-header .header-nav-link {
+    font-size: 3vw;
+  }
+  .secondary-nav-list {
+    gap: 4vw 3vw;
+  }
+  .secondary-nav-link {
+    font-size: 3vw;
+  }
+  .about-hero-title {
+    font-size: 6.5vw;
+  }
+  .story-content {
+    padding: 5vh 6vw;
+  }
+  .story-title {
+    font-size: 5.5vw;
+  }
+  .story-text {
+    font-size: 3.5vw;
+  }
+  .newsletter-title {
+      font-size: 6.5vw;
+  }
+
+  .newsletter-description {
+      font-size: 3.5vw;
+  }
+
+  .newsletter-input-narrow {
+      width: 70vw;
+      font-size: 3.5vw;
+  }
+
+  .checkbox-item {
+      font-size: 3.5vw;
+      gap: 3vw;
+  }
+
+  .newsletter-checkbox {
+      width: 5vw;
+      height: 5vw;
+  }
+
+  .footer-grid-about {
+    grid-template-columns: 1fr;
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-3vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(3vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
